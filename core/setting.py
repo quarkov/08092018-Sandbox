@@ -1,5 +1,6 @@
 from core.setting_ip import SettingIP
 
+
 class Setting:
 
 	def __init__(self):
@@ -8,4 +9,4 @@ class Setting:
 	def get_setting_ip(self):
 		self.ip.find()
 		return self.ip
-		
+

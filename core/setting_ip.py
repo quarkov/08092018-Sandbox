@@ -1,5 +1,6 @@
 from core.os_wrapper import wrapper
 
+
 class SettingIP:
 
 	def __init__(self):
@@ -14,4 +15,3 @@ class SettingIP:
 
 	def get_port(self):
 		return self.port
-
