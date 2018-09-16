@@ -13,13 +13,15 @@ class Client:
             sock = socket.socket()
             try:
                 sock.settimeout(2)
-                sock.connect((ip, 9090))
+                sock.connect((ip, ip_list.port()))
                 self.socket = sock
                 print("connected to: ", ip)
             except Exception:
                 print("can't connect to: ", ip)
                 sock.close()
 
+    def send(self):
+        pass
 
-cl = Client()
-cl.try_to_connect()
+
+client = Client()

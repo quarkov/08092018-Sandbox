@@ -1,18 +1,21 @@
 import socket
-
+from core.setting_ip import ip_list
 
 class Server:
 
     def __init__(self):
         self.sock = socket.socket()
-        self.sock.bind(("", 9090))
+        self.sock.bind(("", ip_list.port()))
         self.sock.listen(1)
         self.conn, self.addr = self.sock.accept()
 
+    def thread(self):
+        pass
+        
     # def clients_connected(self):
 
 
-a = Server()
+server = Server()
 
 """
 import socket
