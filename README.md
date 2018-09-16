@@ -1,3 +1,3 @@
 # 08092018-Sandbox
 
-He thinks he is John Wayne.
+A light messenger for direct communication between two persons within local net.
