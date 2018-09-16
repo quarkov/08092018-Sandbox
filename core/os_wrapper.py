@@ -24,9 +24,9 @@ class OSLin(OSBase):
 
     def find_local_ip(self):
         ip = []
-        records = os.popen('ip neighbor').read().splitlines()
+        records = os.popen('sudo arp-scan --localnet').read().splitlines()
         for line in records:
-            rec = line.split(' ')[0]
+            rec = line.split('\t')[0]
             if rec.count('.') == 3:
                 ip.append(rec)
         return ip
